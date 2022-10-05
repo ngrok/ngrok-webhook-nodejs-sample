@@ -1,20 +1,17 @@
 {
-  "name": "ngrok-webhook-nodejs-sample",
+  "name": "nodejs-express",
   "version": "1.0.0",
-  "description": "Sample webhook listener using NodeJS and ExpressJS",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "startSlack": "node appSlack.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ngrok/ngrok-webhook-nodejs-sample.git"
-  },
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/ngrok/ngrok-webhook-nodejs-sample/issues"
-  },
-  "homepage": "https://github.com/ngrok/ngrok-webhook-nodejs-sample#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.17.3",
+    "markserv": "^0.2.0",
+    "uuid": "^8.3.2"
   }
 }
