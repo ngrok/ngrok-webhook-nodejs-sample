@@ -3,10 +3,13 @@ var app = express();
 app.use(express.json());
 const port = 3000;
 
-app.all('/', function (req, res) {
-   request = req.body;
-   console.log(request);
-   res.json({ message: "Thank you" });
+app.all('/*', function (req, res) {
+   console.log("-------------- New Request --------------");
+   console.log("Headers:"+ JSON.stringify(req.headers, null, 3));
+   console.log("Body:"+ JSON.stringify(req.body, null, 3));
+   // console.log(request.repository.full_name);
+   // console.log(request.zen);
+   res.json({ message: "Thank you for the message" });
 })
 
 app.listen(port, function () {
