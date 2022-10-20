@@ -7,8 +7,6 @@ app.all('/*', function (req, res) {
    console.log("-------------- New Request --------------");
    console.log("Headers:"+ JSON.stringify(req.headers, null, 3));
    console.log("Body:"+ JSON.stringify(req.body, null, 3));
-   // console.log(request.repository.full_name);
-   // console.log(request.zen);
    res.json({ message: "Thank you for the message" });
 })
 
