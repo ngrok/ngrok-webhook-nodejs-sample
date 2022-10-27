@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Sample webhook listener using NodeJS and ExpressJS",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "startSlack": "node appSlack.js",
+    "startFacebook": "node appFB.js",
+    "startDropbox": "node appDropbox.js"
   },
   "repository": {
     "type": "git",

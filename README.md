@@ -23,6 +23,8 @@ Now you can launch the app:
 ```bash
 npm start
 ```
+Alternativelly, you can run one of the following apps:
+    `npm run startFB`
 
 The app runs by default on port 3000
 
