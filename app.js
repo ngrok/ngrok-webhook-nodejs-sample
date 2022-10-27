@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 const port = 3000;
 
 app.all('/*', function (req, res) {
