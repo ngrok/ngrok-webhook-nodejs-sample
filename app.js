@@ -5,6 +5,13 @@ app.use(express.urlencoded({ extended: true }));
 
 const port = 3000;
 
+const myArgs = process.argv.slice(2);
+
+app.all('/validate', function (req, res) {
+   console.log("-------------- Validate Request --------------");
+   res.json( {"confirmation_code":myArgs[0]} );
+})
+
 app.all('/*', function (req, res) {
    console.log("-------------- New Request --------------");
    console.log("Headers:"+ JSON.stringify(req.headers, null, 3));
