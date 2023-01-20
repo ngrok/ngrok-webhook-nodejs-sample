@@ -25,6 +25,7 @@ npm start
 ```
 Alternativelly, you can run one of the following apps:
     `npm run startFB`
+    `npm run startZoom`
 
 The app runs by default on port 3000
 
