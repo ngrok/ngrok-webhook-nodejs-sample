@@ -28,6 +28,7 @@ app.get("/*", (req, res) => {
   // Check if a token is in the query string of the request
   if (crc_token) {
     var hash = get_challenge_response(crc_token, consumer_secret)
+    console.log("hash="+ hash);
     res.status(200);
     res.send({response_token: 'sha256=' + hash})
   } else {
