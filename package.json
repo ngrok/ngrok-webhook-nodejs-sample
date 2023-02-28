@@ -6,7 +6,8 @@
     "start": "node app.js",
     "startSlack": "node appSlack.js",
     "startFacebook": "node appFB.js",
-    "startDropbox": "node appDropbox.js"
+    "startDropbox": "node appDropbox.js",
+    "startTwitter": "node appTwitter.js"
   },
   "repository": {
     "type": "git",
