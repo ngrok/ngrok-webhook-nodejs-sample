@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.json());
-const port = 3000;
+const port = 8080;
 
 app.post('/*', function (req, res) {
   console.log("-------------- New Request POST --------------");
