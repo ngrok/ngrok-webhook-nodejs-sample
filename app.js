@@ -3,7 +3,7 @@ var app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const port = 3000;
+const port = 8080;
 
 app.all('/*', function (req, res) {
    console.log("-------------- New Request --------------");
