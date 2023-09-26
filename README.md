@@ -26,14 +26,14 @@ npm start
 Alternativelly, you can run one of the following apps:
     `npm run startFB`
 
-The app runs by default on port 3000
+The app runs by default on port 8080
 
 ## Making this app public with ngrok
 
 To make your app public using ngrok, enter:
 
 ```bash
-ngrok http 3000
+ngrok http 8080
 ```
 
 ## Help
